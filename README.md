@@ -1,4 +1,4 @@
 # BasicProject
-==C language foundation==
+## C language foundation
 
 >./make_app.sh
