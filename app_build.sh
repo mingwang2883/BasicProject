@@ -5,6 +5,7 @@ if [ ! -d ./build ];then
 fi
 
 cd build
+rm * -rf
 cmake ../
 make -j4
 if [ $? -eq 0 ];then

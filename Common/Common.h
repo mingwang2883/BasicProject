@@ -1,5 +1,5 @@
-#ifndef _BASIC_PRO_COM_H
-#define _BASIC_PRO_COM_H
+#ifndef _COMMON_H_
+#define _COMMON_H_
 
 #ifdef __cplusplus
 extern "C" {
@@ -7,6 +7,9 @@ extern "C" {
 
 #include <stdio.h>
 #include <unistd.h>
+
+
+unsigned char Wrap_Get_g_thread_running_flag(void);
 
 #ifdef __cplusplus
 }
