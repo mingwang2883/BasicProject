@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <string.h>
 #include "AppShowTime.h"
+#include "AppPrintData.h"
 
 unsigned char g_thread_running_flag = 1;
 
@@ -13,10 +14,13 @@ unsigned char Wrap_Get_g_thread_running_flag(void)
 
 int main(void)
 {
+    //Wrap_App_print_data();
+
+    Wrap_App_print_mixture_data();
     /*
     创建业务逻辑功能线程，主函数内不做任何处理
     */
-    Wrap_App_show_time_init();
+    //Wrap_App_show_time_init();
 
     while(g_thread_running_flag)
     {

@@ -7,8 +7,10 @@ add_definitions("-Wall -Os -fno-strict-aliasing -rdynamic -funwind-tables -ffunc
 set(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR}/bin)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_BINARY_DIR}/lib)
 
+include_directories(Common)
 include_directories(Common/ComTimeFunc)
 include_directories(Application/AppShowTime)
+include_directories(Application/AppPrintData)
 
 add_subdirectory(Common)
 add_subdirectory(Application)
